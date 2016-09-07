@@ -1,0 +1,9 @@
+<h2>{{title}}</h2>
+
+<div style="padding: 7px">
+  <input [(ngModel)]="inputText" type="text" placeholder="Írj valamit ide" (keyup.enter)="clickButton()"/>
+  <button type="submit" (click)="clickButton()">Nyomkodj</button>
+</div>
+<div>
+  <textarea cols="80" rows="10" [(ngModel)]="textData"></textarea>
+</div>

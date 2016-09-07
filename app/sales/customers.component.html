@@ -1,0 +1,29 @@
+<h1>{{title}}</h1>
+<div style="overflow-x:auto;" class="tbl">
+  <table>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Abbr</th>
+        <th>Name</th>
+        <th>Country</th>
+        <th>State</th>
+        <th>Zipcode</th>
+        <th>City</th>
+        <th>Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let customer of customers" (click)="onSelect(customer)" [class.selected]="customer === selectedCustomer">
+        <td>{{customer.id}}</td>
+        <td>{{customer.abbr}}</td>
+        <td>{{customer.name}}</td>
+        <td>{{customer.country}}</td>
+        <td>{{customer.state}}</td>
+        <td>{{customer.zipcode}}</td>
+        <td>{{customer.city}}</td>
+        <td>{{customer.address}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

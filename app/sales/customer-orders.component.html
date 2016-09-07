@@ -1,0 +1,36 @@
+<h1>{{title}}</h1>
+<!--
+<ul class="customerorders">
+  <li *ngFor="let customerorder of customerorders"
+    [class.selected]="customerorder === selectedCustomerOrder"
+    (click)="onSelect(customerorder)">
+    <span class="badge">{{customerorder.id}}</span> {{customerorder.customer}} {{customerorder.orderdate}} {{customerorder.value}}
+  </li>
+</ul>
+-->
+<div style="overflow-x:auto;" class="tbl">
+  <table>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Customer</th>
+        <th>Date</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let customerorder of customerorders" (click)="onSelect(customerorder)" [class.selected]="customerorder === selectedCustomerOrder">
+        <td>{{customerorder.id}}</td>
+        <td>{{customerorder.customer}}</td>
+        <td>{{customerorder.orderdate}}</td>
+        <td>{{customerorder.value}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div *ngIf="selectedCustomerOrder">
+<h2>
+  Order nr. {{selectedCustomerOrder.id}} is selected
+</h2>
+<button (click)="gotoDetail()">View Details</button>
+</div>

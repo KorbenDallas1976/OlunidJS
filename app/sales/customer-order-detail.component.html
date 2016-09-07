@@ -1,0 +1,12 @@
+<div *ngIf="customerorder">
+  <h2>{{customerorder.id}} details</h2>
+  <div>
+    <label>Customer: </label>{{customerorder.customer}}</div>
+  <div>
+    <label>Date: </label>
+    <input [(ngModel)]="customerorder.orderdate" placeholder="order date" />
+    <label>Value: </label>
+    <input [(ngModel)]="customerorder.value" placeholder="order value" />
+  </div>
+  <button (click)="goBack()">Back</button>
+</div>

@@ -3,7 +3,7 @@
   "description": "Olunid JS",
   "repository": {
     "type": "git",
-    "url": "git://github.com/KorbenDallas1976/OlunidJS.git"
+    "url": "git://github.com/KorbenDallas1976/OlunidJS-Client.git"
   },
   "version": "1.0.0",
   "scripts": {
@@ -17,6 +17,7 @@
   "license": "ISC",
   "dependencies": {
     "typescript": "^2.0.2",
+    "@angular/platform-server": "^2.0.0-rc.6",
     "@angular/common": "2.0.0-rc.6",
     "@angular/compiler": "2.0.0-rc.6",
     "@angular/compiler-cli": "0.6.0",

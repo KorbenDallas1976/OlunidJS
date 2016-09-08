@@ -2,6 +2,8 @@ import { NgModule }       from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
 
+import { HttpModule} from '@angular/http';
+
 import { routing,
          appRoutingProviders } from './app.routing';
 
@@ -22,7 +24,8 @@ import { PartnerDetailComponent } from './sales/partner/partner-detail.component
  imports: [
    BrowserModule,
    FormsModule,
-   routing
+   routing,
+   HttpModule
  ],
  declarations: [
    AppComponent,

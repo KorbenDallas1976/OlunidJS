@@ -14,7 +14,7 @@ var Observable_1 = require('rxjs/Observable');
 var CustomerService = (function () {
     function CustomerService(http) {
         this.http = http;
-        this.customersUrl = 'http://localhost:3333/api/Customers'; // URL to web API
+        this.customersUrl = 'http://localhost:3333/api/customers'; // URL to web API
     }
     CustomerService.prototype.getCustomers = function () {
         return this.http.get(this.customersUrl)

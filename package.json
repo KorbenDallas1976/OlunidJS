@@ -1,6 +1,7 @@
 {
   "name": "olunidjs-client",
   "description": "Olunid JS",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git://github.com/KorbenDallas1976/OlunidJS-Client.git"

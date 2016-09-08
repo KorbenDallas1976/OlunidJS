@@ -7,7 +7,7 @@ import { Observable }     from 'rxjs/Observable';
 export class CustomerService {
 
   constructor (private http: Http) {}
-  private customersUrl = 'http://localhost:3333/api/Customers';  // URL to web API
+  private customersUrl = 'http://localhost:3333/api/customers';  // URL to web API
 
   getCustomers (): Observable<Customer[]> {
     return this.http.get(this.customersUrl)

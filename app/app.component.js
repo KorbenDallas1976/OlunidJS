@@ -18,7 +18,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'olu-app',
-            template: "\n    <top-menu></top-menu>\n    <div style=\"padding: 10px\">\n    <router-outlet></router-outlet>\n  ",
+            template: "\n    <top-menu></top-menu>\n    <div style=\"padding: 10px;\">\n    <router-outlet></router-outlet>\n    </div>\n  ",
             styleUrls: ['app/app.component.css'],
         }), 
         __metadata('design:paramtypes', [])

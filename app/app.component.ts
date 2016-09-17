@@ -7,8 +7,9 @@ import './rxjs-operators';
   selector: 'olu-app',
   template: `
     <top-menu></top-menu>
-    <div style="padding: 10px">
+    <div style="padding: 10px;">
     <router-outlet></router-outlet>
+    </div>
   `,
   styleUrls: ['app/app.component.css'],
 })

@@ -9,11 +9,17 @@ import { CustomersComponent } from './sales/customers.component';
 import { CustomerOrderDetailComponent } from './sales/customer-order-detail.component';
 import { Test1Component } from './test/test1.component';
 import { PartnerDetailComponent } from './sales/partner/partner-detail.component';
+import { PartnerListComponent } from './mast/partner-list.component';
+import { PartnerComponent } from './mast/partner.component';
 
 const appRoutes: Routes = [
   {path: '', /*name: 'Home',*/ component: HomeComponent},
   {path: 'about', /*name: 'About',*/ component: AboutComponent},
   {path: 'help', /*name: 'Help',*/ component: HelpComponent},
+  // --- Master Data ---
+  {path: 'mast/partnerlist', component: PartnerListComponent},
+  {path: 'mast/partner/:id', component: PartnerComponent},
+  // --- Sales ---
   {path: 'sales/customerorders', /*name: 'CustomerOrders',*/ component: CustomerOrdersComponent},
   {path: 'sales/customers', /*name: 'Customers',*/ component: CustomersComponent},
   {path: 'sales/customerorder/:id', /*name: 'CustomerOrderDetail',*/ component: CustomerOrderDetailComponent},

@@ -1,0 +1,29 @@
+<h1>{{title}}</h1>
+<div>
+  <label>Partner name:</label> <input #partnerName />
+  <button (click)="add(partnerName.value); partnerName.value=''">
+    Add
+  </button>
+</div>
+<div style="overflow-x:auto;" class="tbl">
+  <table>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Abbr</th>
+        <th>Name</th>
+        <th>Remark</th>
+        <th>&nbsp;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let partner of partners" (click)="onSelect(partner)" [class.selected]="partner === selectedPartner">
+        <td>{{partner.id}}</td>
+        <td>{{partner.abbreviation}}</td>
+        <td>{{partner.name}}</td>
+        <td>{{partner.remark}}</td>
+        <td><button class="delete" (click)="delete(hero); $event.stopPropagation()">x</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -18,6 +18,8 @@ import { CustomersComponent } from './sales/customers.component';
 import { CustomerOrderDetailComponent } from './sales/customer-order-detail.component';
 import { Test1Component } from './test/test1.component';
 import { PartnerDetailComponent } from './sales/partner/partner-detail.component';
+import { PartnerListComponent } from './mast/partner-list.component';
+import { PartnerComponent } from './mast/partner.component';
 
 
 @NgModule({
@@ -37,7 +39,9 @@ import { PartnerDetailComponent } from './sales/partner/partner-detail.component
    CustomersComponent,
    CustomerOrderDetailComponent,
    Test1Component,
-   PartnerDetailComponent
+   PartnerDetailComponent,
+   PartnerListComponent,
+   PartnerComponent,
  ],
  providers: [
    appRoutingProviders

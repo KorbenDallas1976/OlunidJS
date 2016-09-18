@@ -23,6 +23,8 @@ var customers_component_1 = require('./sales/customers.component');
 var customer_order_detail_component_1 = require('./sales/customer-order-detail.component');
 var test1_component_1 = require('./test/test1.component');
 var partner_detail_component_1 = require('./sales/partner/partner-detail.component');
+var partner_list_component_1 = require('./mast/partner-list.component');
+var partner_component_1 = require('./mast/partner.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -44,7 +46,9 @@ var AppModule = (function () {
                 customers_component_1.CustomersComponent,
                 customer_order_detail_component_1.CustomerOrderDetailComponent,
                 test1_component_1.Test1Component,
-                partner_detail_component_1.PartnerDetailComponent
+                partner_detail_component_1.PartnerDetailComponent,
+                partner_list_component_1.PartnerListComponent,
+                partner_component_1.PartnerComponent,
             ],
             providers: [
                 app_routing_1.appRoutingProviders

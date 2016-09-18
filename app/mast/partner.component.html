@@ -1,0 +1,20 @@
+<h1>{{title}}</h1>
+<div *ngIf="partner">
+  <h2>{{partner.name}}</h2>
+  <div><label>ID: </label>{{partner.id}}</div>
+  <div>
+      <label>Abbreviation: </label>
+      <input [(ngModel)]="partner.abbreviation" placeholder="abbreviation">
+  </div>
+  <div>
+      <label>Name: </label>
+      <input [(ngModel)]="partner.name" placeholder="name">
+  </div>
+  <div>
+      <label>Remark: </label>
+      <input [(ngModel)]="partner.remark" placeholder="remark">
+  </div>
+  <button (click)="onSave()">Save</button>
+
+</div>
+<button (click)="goBack()">Back</button>
